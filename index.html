@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XBlock</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lfwd6UrAAAAAOBP4j6X_UjolcwisxMdGU3ucrU3"></script>
+</head>
+<body>
+    <!-- Topbar -->
+    <header class="topbar">
+        <h1>XBlock</h1>
+        <div class="topbar-buttons">
+            <button id="profileBtn">Meu Perfil</button>
+            <button id="downloadBtn">Baixar XBlock</button>
+        </div>
+    </header>
+
+    <!-- Login -->
+    <div class="login-container" id="loginContainer">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Senha">
+        <button id="loginBtn">Entrar</button>
+    </div>
+
+    <!-- Games -->
+    <div class="games-container" id="gamesContainer" style="display:none;">
+        <h2>Jogos Disponíveis</h2>
+        <div class="games-list" id="gamesList"></div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script type="module" src="firebase-init.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
